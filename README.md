@@ -107,28 +107,3 @@ my-api/
 ```
 
 ---
-
-## Roadmap
-
-### Phase 1 — done ✅
-- [x] Express backend generation
-- [x] NestJS backend generation
-- [x] MongoDB + PostgreSQL
-- [x] JWT authentication
-- [x] Input validation
-- [x] ZIP download
-- [x] Save/load templates (localStorage)
-- [x] File preview before download
-- [x] Strategy pattern architecture
-
-### Phase 2 — in progress 🚧
-- [ ] Entity relationships (one-to-many, many-to-many)
-- [ ] Pagination, filtering, sorting on generated endpoints
-- [ ] Advanced field validation (min, max, regex)
-- [ ] File upload handling
-
-### Phase 3 — planned 📋
-- [ ] Shareable links (server-side template storage, no auth needed)
-- [ ] Docker + docker-compose generation
-- [ ] Test scaffolding (Jest / Vitest)
-- [ ] Deployment config (Railway, Render, Heroku)
