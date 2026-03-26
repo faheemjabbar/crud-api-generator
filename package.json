@@ -1,0 +1,21 @@
+{
+  "name": "backend-generator-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "build": "npm run build --prefix client",
+    "clean": "rimraf client/node_modules server/node_modules node_modules",
+    "audit:fix": "npm audit fix --prefix client && npm audit fix --prefix server",
+    "test": "npm test --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "rimraf": "^5.0.5"
+  }
+}
